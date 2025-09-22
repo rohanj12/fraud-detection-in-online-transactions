@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Online Transaction",
+  "type": "object",
+  "properties": {
+    "transaction_id": {"type": "string"},
+    "event_ts": {"type": "string", "format": "date-time"},
+    "user_id": {"type": "string"},
+    "card_id": {"type": "string"},
+    "merchant_id": {"type": "string"},
+    "merchant_category": {"type": "string"},
+    "amount": {"type": "number"},
+    "currency": {"type": "string"},
+    "country": {"type": "string"},
+    "city": {"type": "string"},
+    "ip_address": {"type": "string"},
+    "device_id": {"type": "string"},
+    "channel": {"type": "string"},
+    "entry_mode": {"type": "string"},
+    "is_international": {"type": "boolean"},
+    "lat": {"type": "number"},
+    "lon": {"type": "number"},
+    "previous_txn_ts": {"type": ["string", "null"]},
+    "velocity_10min": {"type": "integer"},
+    "merchant_risk_score": {"type": "number"},
+    "label_training_only": {"type": ["integer", "null"]}
+  },
+  "required": [
+    "transaction_id","event_ts","user_id","card_id","merchant_id",
+    "merchant_category","amount","currency","country","ip_address",
+    "device_id","channel","entry_mode","is_international","lat","lon",
+    "velocity_10min","merchant_risk_score"
+  ],
+  "additionalProperties": true
+}

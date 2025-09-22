@@ -1,0 +1,5 @@
+kafka-python==2.0.2
+faker==25.9.1
+python-dateutil==2.9.0.post0
+boto3==1.35.12        # only if you enable S3 upload
+pyyaml==6.0.2
